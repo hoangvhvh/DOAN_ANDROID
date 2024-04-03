@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -20,9 +19,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import data.model.cart;
-import org.duchoang.doan.R;
 import util.Server;
-import ui.adapter.itemInCartAdapter;
+import ui.adapter.ItemInCartAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -40,7 +38,7 @@ public class GioHang extends AppCompatActivity {
     SharedPreferences sharedPreferences;
     TextView tongSoLuong, soLuong, them, giam;
     public static ArrayList<cart> giohangArrayList = new ArrayList<>();
-    private itemInCartAdapter adapter;
+    private ItemInCartAdapter adapter;
     private ListView listView;
     private static int iduser_share;
     TextView tongtiengh,getidorder,muaHang;
@@ -75,7 +73,7 @@ public class GioHang extends AppCompatActivity {
         });
         listView = findViewById(R.id.mylistview_Danhsachsp);
 
-        adapter = new itemInCartAdapter(this,giohangArrayList);
+        adapter = new ItemInCartAdapter(this,giohangArrayList);
         listView.setAdapter(adapter);
         getdata(iduser_share);
 

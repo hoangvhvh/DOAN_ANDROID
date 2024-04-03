@@ -3,17 +3,14 @@ package ui.adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 
 import com.android.volley.AuthFailureError;
@@ -35,12 +32,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class itemInCartAdapter extends BaseAdapter {
+public class ItemInCartAdapter extends BaseAdapter {
     Context context;
     ArrayList<cart> arraygiohang;
 
 
-    public itemInCartAdapter(Context context, ArrayList<cart> arraygiohang) {
+    public ItemInCartAdapter(Context context, ArrayList<cart> arraygiohang) {
         this.context = context;
         this.arraygiohang = arraygiohang;
     }

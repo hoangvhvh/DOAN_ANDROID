@@ -5,6 +5,9 @@
       <entry key="Admin">
         <State />
       </entry>
+      <entry key="DangNhap">
+        <State />
+      </entry>
       <entry key="ThemCTHoaDon">
         <State />
       </entry>
@@ -12,9 +15,6 @@
         <State />
       </entry>
       <entry key="TrangChu">
-        <State />
-      </entry>
-      <entry key="YourActivity">
         <State />
       </entry>
       <entry key="app">
